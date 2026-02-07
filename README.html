@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول - Apple</title>
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* إعدادات عامة */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'SF Pro Text', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* صندوق تسجيل الدخول */
+    .login-container {
+      background-color: #ffffff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-container img {
+      width: 50px;
+      margin-bottom: 20px;
+    }
+
+    .login-container h2 {
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #1d1d1f;
+    }
+
+    /* الحقول */
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #d2d2d7;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #f5f5f7;
+    }
+
+    .login-container input:focus {
+      outline: none;
+      border-color: #0071e3;
+      box-shadow: 0 0 0 2px rgba(0,113,227,0.2);
+      background-color: #ffffff;
+    }
+
+    /* زر تسجيل الدخول */
+    .login-container button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background-color: #0071e3;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-container button:hover {
+      background-color: #005bb5;
+    }
+
+    /* روابط مساعدة */
+    .login-container .help-links {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #6e6e73;
+    }
+
+    .login-container .help-links a {
+      color: #0071e3;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .login-container .help-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* تلميحات إضافية */
+    .login-container .footer-text {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #6e6e73;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+    <h2>تسجيل الدخول إلى Apple ID</h2>
+    
+    <form>
+      <input type="email" placeholder="البريد الإلكتروني أو Apple ID" required>
+      <input type="password" placeholder="كلمة المرور" required>
+      <button type="submit">تسجيل الدخول</button>
+    </form>
+
+    <div class="help-links">
+      <a href="#">هل نسيت Apple ID أو كلمة السر؟</a>
+      <br>
+      <a href="#">إنشاء Apple ID جديد</a>
+    </div>
+
+    <div class="footer-text">
+      تم تشغيل Apple ID بواسطة Apple
+    </div>
+  </div>
+
+</body>
+</html>
